@@ -15,6 +15,12 @@
 		5A47C6F0239EC110000D0F02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A47C6EE239EC110000D0F02 /* LaunchScreen.storyboard */; };
 		5A47C6FB239EC110000D0F02 /* WiproTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47C6FA239EC110000D0F02 /* WiproTestTests.swift */; };
 		5A47C706239EC110000D0F02 /* WiproTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47C705239EC110000D0F02 /* WiproTestUITests.swift */; };
+		5A9BCAA4239EC55F004275B3 /* UIImageView+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9BCAA3239EC55F004275B3 /* UIImageView+ImageCache.swift */; };
+		5A9BCAA6239EC5A2004275B3 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9BCAA5239EC5A2004275B3 /* Resource.swift */; };
+		5A9BCAA8239EC5DD004275B3 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9BCAA7239EC5DD004275B3 /* Webservice.swift */; };
+		5A9BCAAA239EC626004275B3 /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9BCAA9239EC626004275B3 /* URLFactory.swift */; };
+		5A9BCAAE239EC6F0004275B3 /* Datamodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9BCAAD239EC6F0004275B3 /* Datamodel.swift */; };
+		5A9BCAB0239ECA93004275B3 /* CustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9BCAAF239ECA93004275B3 /* CustomTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		5A47C701239EC110000D0F02 /* WiproTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A47C705239EC110000D0F02 /* WiproTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproTestUITests.swift; sourceTree = "<group>"; };
 		5A47C707239EC110000D0F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A9BCAA3239EC55F004275B3 /* UIImageView+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageCache.swift"; sourceTree = "<group>"; };
+		5A9BCAA5239EC5A2004275B3 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		5A9BCAA7239EC5DD004275B3 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		5A9BCAA9239EC626004275B3 /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
+		5A9BCAAD239EC6F0004275B3 /* Datamodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datamodel.swift; sourceTree = "<group>"; };
+		5A9BCAAF239ECA93004275B3 /* CustomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +111,12 @@
 		5A47C6E2239EC10C000D0F02 /* WiproTest */ = {
 			isa = PBXGroup;
 			children = (
-				5A47C6E3239EC10C000D0F02 /* AppDelegate.swift */,
-				5A47C6E5239EC10C000D0F02 /* SceneDelegate.swift */,
-				5A47C6E7239EC10C000D0F02 /* ViewController.swift */,
-				5A47C6E9239EC10C000D0F02 /* Main.storyboard */,
+				5A9BCAAC239EC6A9004275B3 /* Application */,
+				5A9BCAA2239EC52A004275B3 /* Network Layer */,
+				5A9BCAA0239EC512004275B3 /* Extensions */,
+				5A9BCA9F239EC4DD004275B3 /* TVC */,
+				5A9BCA9E239EC4D1004275B3 /* Model */,
+				5A9BCA9D239EC4AD004275B3 /* VC */,
 				5A47C6EC239EC110000D0F02 /* Assets.xcassets */,
 				5A47C6EE239EC110000D0F02 /* LaunchScreen.storyboard */,
 				5A47C6F1239EC110000D0F02 /* Info.plist */,
@@ -126,6 +140,58 @@
 				5A47C707239EC110000D0F02 /* Info.plist */,
 			);
 			path = WiproTestUITests;
+			sourceTree = "<group>";
+		};
+		5A9BCA9D239EC4AD004275B3 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				5A47C6E7239EC10C000D0F02 /* ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		5A9BCA9E239EC4D1004275B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A9BCAAD239EC6F0004275B3 /* Datamodel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A9BCA9F239EC4DD004275B3 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				5A9BCAAF239ECA93004275B3 /* CustomTVC.swift */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		5A9BCAA0239EC512004275B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A9BCAA3239EC55F004275B3 /* UIImageView+ImageCache.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5A9BCAA2239EC52A004275B3 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				5A9BCAA5239EC5A2004275B3 /* Resource.swift */,
+				5A9BCAA7239EC5DD004275B3 /* Webservice.swift */,
+				5A9BCAA9239EC626004275B3 /* URLFactory.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		5A9BCAAC239EC6A9004275B3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5A47C6E3239EC10C000D0F02 /* AppDelegate.swift */,
+				5A47C6E9239EC10C000D0F02 /* Main.storyboard */,
+				5A47C6E5239EC10C000D0F02 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A47C6E8239EC10C000D0F02 /* ViewController.swift in Sources */,
+				5A9BCAA4239EC55F004275B3 /* UIImageView+ImageCache.swift in Sources */,
+				5A9BCAB0239ECA93004275B3 /* CustomTVC.swift in Sources */,
+				5A9BCAA8239EC5DD004275B3 /* Webservice.swift in Sources */,
 				5A47C6E4239EC10C000D0F02 /* AppDelegate.swift in Sources */,
+				5A9BCAAA239EC626004275B3 /* URLFactory.swift in Sources */,
+				5A9BCAAE239EC6F0004275B3 /* Datamodel.swift in Sources */,
+				5A9BCAA6239EC5A2004275B3 /* Resource.swift in Sources */,
 				5A47C6E6239EC10C000D0F02 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
