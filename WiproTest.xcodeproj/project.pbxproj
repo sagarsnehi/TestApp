@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5A47C6E4239EC10C000D0F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47C6E3239EC10C000D0F02 /* AppDelegate.swift */; };
-		5A47C6E6239EC10C000D0F02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47C6E5239EC10C000D0F02 /* SceneDelegate.swift */; };
 		5A47C6E8239EC10C000D0F02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47C6E7239EC10C000D0F02 /* ViewController.swift */; };
 		5A47C6EB239EC10C000D0F02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A47C6E9239EC10C000D0F02 /* Main.storyboard */; };
 		5A47C6ED239EC110000D0F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A47C6EC239EC110000D0F02 /* Assets.xcassets */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		5A47C6E0239EC10C000D0F02 /* WiproTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiproTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A47C6E3239EC10C000D0F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A47C6E5239EC10C000D0F02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5A47C6E7239EC10C000D0F02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A47C6EA239EC10C000D0F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A47C6EC239EC110000D0F02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -189,7 +187,6 @@
 			children = (
 				5A47C6E3239EC10C000D0F02 /* AppDelegate.swift */,
 				5A47C6E9239EC10C000D0F02 /* Main.storyboard */,
-				5A47C6E5239EC10C000D0F02 /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -333,7 +330,6 @@
 				5A9BCAAA239EC626004275B3 /* URLFactory.swift in Sources */,
 				5A9BCAAE239EC6F0004275B3 /* Datamodel.swift in Sources */,
 				5A9BCAA6239EC5A2004275B3 /* Resource.swift in Sources */,
-				5A47C6E6239EC10C000D0F02 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wipro.WiproTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -531,7 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wipro.WiproTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
