@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }
     
     func setupUI(){
-        self.view.backgroundColor = UIColor( red: (0.0)/255, green: (28.0)/255, blue: (50.0)/255, alpha: (1.0) )
+        self.view.backgroundColor = kTestColor
         self.view.addSubview(imageTableView)
         imageTableView.backgroundColor = .clear
         imageTableView.separatorColor = .white

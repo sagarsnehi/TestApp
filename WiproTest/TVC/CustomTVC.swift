@@ -85,8 +85,9 @@ class CustomTVC: UITableViewCell {
         titleLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
         descriptionLbl.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
         descriptionLbl.leftAnchor.constraint(equalTo: self.testImageView.rightAnchor, constant: 10).isActive = true
+        descriptionLbl.heightAnchor.constraint(greaterThanOrEqualToConstant: 30).isActive = true
         descriptionLbl.rightAnchor.constraint(equalTo: self.contentView.rightAnchor).isActive = true
-        descriptionLbl.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
+        contentView.bottomAnchor.constraint(equalTo: self.descriptionLbl.bottomAnchor,constant: 10).isActive = true
         super.layoutSubviews()
     }
     override func awakeFromNib() {

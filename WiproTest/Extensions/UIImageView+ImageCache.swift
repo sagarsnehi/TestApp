@@ -31,7 +31,9 @@ extension UIImageView {
             DispatchQueue.main.async {
                 guard let image = image else {
                     debugPrint("Error fetching Image")
-                    self?.image = UIImage.init()
+                    activityIndicator?.stopAnimating()
+                    activityIndicator?.removeFromSuperview()
+                    self?.image = UIImage.init(named: kPlaceholderImage)
                     return
                 }
                 activityIndicator?.stopAnimating()

@@ -13,6 +13,6 @@ static let shared = URLFactory()
 private init() { }
 
 func prepareDataURL() -> URL{
-    return URL.init(string: "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json")!
+    return URL.init(string: kURL)!
 }
 }
