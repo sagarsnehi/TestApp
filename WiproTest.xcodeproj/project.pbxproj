@@ -20,6 +20,7 @@
 		5A9BCAAE239EC6F0004275B3 /* Datamodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9BCAAD239EC6F0004275B3 /* Datamodel.swift */; };
 		5A9BCAB0239ECA93004275B3 /* CustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9BCAAF239ECA93004275B3 /* CustomTVC.swift */; };
 		5AA5D8E923A81B9300BDD17E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5D8E823A81B9300BDD17E /* Constants.swift */; };
+		5AA5D8EC23A8C08300BDD17E /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5D8EB23A8C08300BDD17E /* ImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		5A9BCAAD239EC6F0004275B3 /* Datamodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datamodel.swift; sourceTree = "<group>"; };
 		5A9BCAAF239ECA93004275B3 /* CustomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTVC.swift; sourceTree = "<group>"; };
 		5AA5D8E823A81B9300BDD17E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5AA5D8EB23A8C08300BDD17E /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		5A47C6E2239EC10C000D0F02 /* WiproTest */ = {
 			isa = PBXGroup;
 			children = (
+				5AA5D8EA23A8BEEE00BDD17E /* ViewModel */,
 				5AA5D8E723A81B7F00BDD17E /* Utility */,
 				5A9BCAAC239EC6A9004275B3 /* Application */,
 				5A9BCAA2239EC52A004275B3 /* Network Layer */,
@@ -197,6 +200,14 @@
 				5AA5D8E823A81B9300BDD17E /* Constants.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		5AA5D8EA23A8BEEE00BDD17E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5D8EB23A8C08300BDD17E /* ImageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +346,7 @@
 				5A9BCAA8239EC5DD004275B3 /* Webservice.swift in Sources */,
 				5A47C6E4239EC10C000D0F02 /* AppDelegate.swift in Sources */,
 				5A9BCAAA239EC626004275B3 /* URLFactory.swift in Sources */,
+				5AA5D8EC23A8C08300BDD17E /* ImageViewModel.swift in Sources */,
 				5A9BCAAE239EC6F0004275B3 /* Datamodel.swift in Sources */,
 				5A9BCAA6239EC5A2004275B3 /* Resource.swift in Sources */,
 				5AA5D8E923A81B9300BDD17E /* Constants.swift in Sources */,
