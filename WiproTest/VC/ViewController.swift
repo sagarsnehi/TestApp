@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    //declare object
-    var imageDetails : DataResponse?
     //ViewModel
     var viewModel = ImageViewModel()
     let activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)

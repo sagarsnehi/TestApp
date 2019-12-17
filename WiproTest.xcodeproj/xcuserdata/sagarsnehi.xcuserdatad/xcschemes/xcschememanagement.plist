@@ -7,7 +7,30 @@
 		<key>WiproTest.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>WiproTestTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5A47C6DF239EC10C000D0F02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A47C6F5239EC110000D0F02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A47C700239EC110000D0F02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
