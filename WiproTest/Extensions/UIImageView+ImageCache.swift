@@ -30,7 +30,7 @@ extension UIImageView {
         _ = URLSession.shared.loadImage(from: url) { [weak self] (image) in
             DispatchQueue.main.async {
                 guard let image = image else {
-                    debugPrint("Error fetching Image")
+                    debugPrint("Error while fetching Image")
                     activityIndicator?.stopAnimating()
                     activityIndicator?.removeFromSuperview()
                     self?.image = UIImage.init(named: kPlaceholderImage)

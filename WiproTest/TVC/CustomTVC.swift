@@ -23,17 +23,18 @@ class CustomTVC: UITableViewCell {
             }
         }
     }
+    
     override func prepareForReuse() {
-            super.prepareForReuse()
-            self.testImageView.image = nil
+        super.prepareForReuse()
+        self.testImageView.image = nil
         
     }
     
     lazy var testImageView:UIImageView = {
         let img = UIImageView()
         img.backgroundColor = .lightGray
-        img.contentMode = .scaleAspectFill // image will never be strecthed vertially or horizontally
-        img.translatesAutoresizingMaskIntoConstraints = false // enable autolayout
+        img.contentMode = .scaleAspectFill
+        img.translatesAutoresizingMaskIntoConstraints = false
         img.layer.cornerRadius = 10
         img.clipsToBounds = true
         return img
@@ -58,19 +59,22 @@ class CustomTVC: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
+    ///cell Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style : style, reuseIdentifier : reuseIdentifier)
         self.backgroundColor = .clear
         self.contentView.addSubview(testImageView)
         self.contentView.addSubview(titleLabel)
         self.contentView.addSubview(descriptionLbl)
-        setConst()
+        setupLayout()
     }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setConst(){
+    func setupLayout(){
         NSLayoutConstraint.activate([
             self.testImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 16.0),
             self.testImageView.heightAnchor.constraint(equalToConstant: 66.0),
@@ -90,12 +94,10 @@ class CustomTVC: UITableViewCell {
         ])
     }
     
-    
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }
